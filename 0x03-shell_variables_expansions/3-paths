@@ -1,2 +1,3 @@
 #!/bin/bash
-echo $PATH | tr -s ':' '\n' | wc -l
+dir_count=$(echo $PATH | tr ':' '\n' | grep -c "")
+echo $dir_count
