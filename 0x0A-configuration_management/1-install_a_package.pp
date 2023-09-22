@@ -1,5 +1,5 @@
-#this code will install the pckage puppet-lint
-package{ 'falsk':
-	ensure => '2.1.0',
-	provider => 'pip3',
-}
+# Installs puppet-lint
+package { 'puppet-lint':
+  ensure   => '2.1.1',
+  provider => 'gem'
+  }
